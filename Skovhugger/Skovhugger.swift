@@ -39,16 +39,16 @@ public class Skovhugger {
 
 //MARK: - Debug log type
 public extension Skovhugger {
-    public class func logDebug(message : String) {
+	class func logDebug(message : String) {
         Skovhugger.log(sub: nil,
                        cat: nil,
                        type: .debug,
                        message: message)
     }
     
-    public class func logDebug(subsystem : String,
-                               category : String,
-                               message : String) {
+	class func logDebug(subsystem : String,
+						category : String,
+						message : String) {
         Skovhugger.log(sub: subsystem,
                        cat: category,
                        type: .debug,
@@ -58,16 +58,16 @@ public extension Skovhugger {
 
 //MARK: - Info log type
 public extension Skovhugger {
-    public class func logInfo(message : String) {
+	class func logInfo(message : String) {
         Skovhugger.log(sub: nil,
                        cat: nil,
                        type: .info,
                        message: message)
     }
     
-    public class func logInfo(subsystem : String,
-                              category : String,
-                              message : String) {
+	class func logInfo(subsystem : String,
+					   category : String,
+					   message : String) {
         Skovhugger.log(sub: subsystem,
                        cat: category,
                        type: .info,
@@ -77,16 +77,16 @@ public extension Skovhugger {
 
 //MARK: - Error log type
 public extension Skovhugger {
-    public class func logError(message : String) {
+	class func logError(message : String) {
         Skovhugger.log(sub: nil,
                        cat: nil,
                        type: .error,
                        message: message)
     }
     
-    public class func logError(subsystem : String,
-                               category : String,
-                               message : String) {
+	class func logError(subsystem : String,
+						category : String,
+						message : String) {
         Skovhugger.log(sub: subsystem,
                        cat: category,
                        type: .error,
@@ -96,16 +96,16 @@ public extension Skovhugger {
 
 //MARK: - Default log type
 public extension Skovhugger {
-    public class func logDefault(message : String) {
+	class func logDefault(message : String) {
         Skovhugger.log(sub: nil,
                        cat: nil,
                        type: .default,
                        message: message)
     }
     
-    public class func logDefault(subsystem : String,
-                                 category : String,
-                                 message : String) {
+	class func logDefault(subsystem : String,
+						  category : String,
+						  message : String) {
         Skovhugger.log(sub: subsystem,
                        cat: category,
                        type: .default,
@@ -119,7 +119,7 @@ public extension Skovhugger {
      Logs a fault type log to the debug console & the logs.
      - Parameter message: the output to the console.
      */
-    public class func logFault(message : String) {
+	class func logFault(message : String) {
         Skovhugger.log(sub: nil,
                        cat: nil,
                        type: .fault,
@@ -133,9 +133,9 @@ public extension Skovhugger {
         - category: A category within the specified subsystem. The category is used for categorization and filtering of related log messages, as well as for grouping related logging settings within the subsystem’s settings. A category’s logging settings override those of the parent subsystem.
         - message: the output to the console.
      */
-    public class func logFault(subsystem : String,
-                               category : String,
-                               message : String) {
+	class func logFault(subsystem : String,
+						category : String,
+						message : String) {
         Skovhugger.log(sub: subsystem,
                        cat: category,
                        type: .fault,
